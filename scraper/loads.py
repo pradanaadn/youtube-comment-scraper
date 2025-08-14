@@ -1,7 +1,7 @@
 import requests
 import csv
 
-API_KEY = "AIzaSyCKvuPxUiNha5qYLw2zAv6AJNCaG3n5hXg"
+API_KEY = ""
 VIDEO_ID = "REvlWJ7lo4M"
 
 base_url = "https://www.googleapis.com/youtube/v3/commentThreads"
