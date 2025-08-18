@@ -9,12 +9,14 @@ from pydantic_extra_types.country import CountryAlpha2
 class PopularVideoParams(BaseModel):
     regionCode: CountryAlpha2 = Field(
         "ID", description="The region code to filter videos."
-    )
+    )  # type: ignore
     videoCategoryId: int = Field(description="The category ID to filter videos.")
     maxResults: int = Field(100, description="The maximum number of results to return.")
     pageToken: str | None = Field(
         None, description="The token for the next page of results."
     )
+    chart: str | None = Field("mostPopular", description="The chart to filter videos.")
+    key:str = Field(description="Your YouTube API key.")
 
 
 class Item(BaseModel):

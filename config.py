@@ -16,13 +16,13 @@ class YoutubeAPISettings(BaseSettings):
 
 
 class Settings(BaseSettings):
-    youtube: YoutubeAPISettings = YoutubeAPISettings()
+    youtube: YoutubeAPISettings = YoutubeAPISettings() # type: ignore
 
     model_config = SettingsConfigDict(
         env_file=".env", env_file_encoding="utf-8", case_sensitive=False, extra="ignore"
     )
 
-
+SETTINGS = Settings()
 
 if __name__ == "__main__":
     settings = Settings()

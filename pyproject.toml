@@ -8,6 +8,7 @@ dependencies = [
     "aiohttp>=3.12.15",
     "loguru>=0.7.3",
     "pandas>=2.3.1",
+    "pycountry>=24.6.1",
     "pydantic>=2.11.7",
     "pydantic-extra-types>=2.10.5",
     "pydantic-settings>=2.10.1",
